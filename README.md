@@ -32,7 +32,8 @@ Email: angeliksi@ece.auth.gr
  
  
 
-	Συχνότητα Λειτουργίας (Clock Frequency):![εικόνα](https://github.com/user-attachments/assets/e1ceb820-c1af-4e40-ae92-03a23e49a564)
+	Συχνότητα Λειτουργίας (Clock Frequency):
+ ![εικόνα](https://github.com/user-attachments/assets/e1ceb820-c1af-4e40-ae92-03a23e49a564)
  ![εικόνα](https://github.com/user-attachments/assets/8628a6c8-ffc8-47a5-ad7f-2cface063b0f)
 
 
