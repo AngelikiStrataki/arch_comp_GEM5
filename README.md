@@ -29,39 +29,42 @@ Email: angeliksi@ece.auth.gr
 Ερωτήματα Πρώτου Μέρους 1
 	Στο αρχείο starter_se.py εντοπίσαμε τις βασικές παραμέτρους του συστήματος που πρόκειται να εξομοιωθεί από τον gem5.
 	Τύπος CPU, Caches:
- 
+![εικόνα](https://github.com/user-attachments/assets/e1ceb820-c1af-4e40-ae92-03a23e49a564)
+![εικόνα](https://github.com/user-attachments/assets/8628a6c8-ffc8-47a5-ad7f-2cface063b0f)
  
 
 	Συχνότητα Λειτουργίας (Clock Frequency):
- ![εικόνα](https://github.com/user-attachments/assets/e1ceb820-c1af-4e40-ae92-03a23e49a564)
- ![εικόνα](https://github.com/user-attachments/assets/8628a6c8-ffc8-47a5-ad7f-2cface063b0f)
+ ![εικόνα](https://github.com/user-attachments/assets/5f259e21-aefb-45c6-8ceb-5036fe9d91b9)
+
 
 
  
 	Φυσική μνήμη (RAM):
- ![εικόνα](https://github.com/user-attachments/assets/5f259e21-aefb-45c6-8ceb-5036fe9d91b9)
-
- 
-	Τύπος μνήμης:
  ![εικόνα](https://github.com/user-attachments/assets/99f96ba8-0670-44b4-b33b-315eeeeb6123)
 
  
-	Αριθμός πυρήνων:
+	Τύπος μνήμης:
  ![εικόνα](https://github.com/user-attachments/assets/aba50543-2627-4e72-acf7-ab5d24f3417a)
 
  
-	Cache Line Size:
+	Αριθμός πυρήνων:
  ![εικόνα](https://github.com/user-attachments/assets/198326a5-13a6-46d2-9677-3eeabbe3cce7)
+
+ 
+	Cache Line Size:
+ ![εικόνα](https://github.com/user-attachments/assets/64a0b0db-531c-4cf8-a687-06ac3784daf7)
 
 
 	Bus (Δίαυλος μνήμης):
- ![εικόνα](https://github.com/user-attachments/assets/64a0b0db-531c-4cf8-a687-06ac3784daf7)
+![εικόνα](https://github.com/user-attachments/assets/34f6b825-a315-4ea7-a673-fbf515d99812)
 
  
-	Από τη μέθοδο addL1() και addL2() στο αρχείο, αυτές οι caches προστίθενται αν η λειτουργία είναι timing
- 
+	Από τη μέθοδο addL1() και addL2() στο αρχείο, αυτές οι caches προστίθενται αν η λειτουργία είναι timing:
+ ![εικόνα](https://github.com/user-attachments/assets/d89f778e-5bfc-42b3-a5e0-f2af3ab8478b)
+
 	Τάση:
- 
+ ![εικόνα](https://github.com/user-attachments/assets/a55758e3-9b69-40e6-933d-725804289d1c)
+
 
 
 
@@ -83,41 +86,55 @@ Bus	SystemXBar
 
 2) (a) Επαλήθευση από τα αρχεία config.ini και config.json
 Στο config.ini:
-	Αυτό δείχνει ότι ο επεξεργαστής που χρησιμοποιείται είναι το μοντέλο MinorCPU.
+	Αυτό δείχνει ότι ο επεξεργαστής που χρησιμοποιείται είναι το μοντέλο MinorCPU. ![εικόνα](https://github.com/user-attachments/assets/e47c6499-c1a6-425b-83e5-de76e0facc22)
+
  
-	Αυτό σημαίνει ότι η συχνότητα λειτουργίας του επεξεργαστή έχει οριστεί σε 1GHz.
+	Αυτό σημαίνει ότι η συχνότητα λειτουργίας του επεξεργαστή έχει οριστεί σε 1GHz. ![εικόνα](https://github.com/user-attachments/assets/9bb5da2f-554d-4a66-80fc-5bd5f5a233de)
+
  
-	Αυτές οι γραμμές δείχνουν ότι χρησιμοποιούνται L2 instruction cache (icache) και L2 data cache (dcache). 
+	Αυτές οι γραμμές δείχνουν ότι χρησιμοποιούνται L2 instruction cache (icache) και L2 data cache (dcache). ![εικόνα](https://github.com/user-attachments/assets/eb47cc6e-b4ea-4951-97bd-c873b2157d8c)
+
  
 	Αυτό δείχνει ότι η μνήμη του συστήματος έχει οριστεί στα περίπου 214MB.
- 
+ ![εικόνα](https://github.com/user-attachments/assets/65ff452b-e920-4e1c-90aa-dae5db463399)
+
 Στο config.json:
 Αντίστοιχα σε αυτό το αρχείο βρήκαμε πάλι τα ίδια.
-    
+    ![εικόνα](https://github.com/user-attachments/assets/3c99c1c0-c784-4a70-b9a9-346eb8c98e96)
+![εικόνα](https://github.com/user-attachments/assets/1598f35c-45e0-4bbf-84ea-4ab816d5c3e9)
+![εικόνα](https://github.com/user-attachments/assets/475c20a3-7713-44a8-9252-4f84535ff9eb)
+![εικόνα](https://github.com/user-attachments/assets/394a6982-b2df-441a-abe8-9f9b128bfe91)
+
+
 (b) Τι είναι τα sim_seconds, sim_insts, και host_inst_rate:
 	sim_seconds:
 	Είναι ο συνολικός χρόνος σε δευτερόλεπτα προσομοίωσης που πέρασε μέσα στο σύστημα που εξομοιώνεται.
 	Αντιπροσωπεύει το χρόνο που μετράει το εξομοιωμένο σύστημα (όχι ο χρόνος στον πραγματικό υπολογιστή που εκτελεί την προσομοίωση).
- 
+ ![εικόνα](https://github.com/user-attachments/assets/7232c754-f24d-4e3a-9122-6dc655fa888a)
+
 
 	sim_insts:
 	Είναι ο συνολικός αριθμός των εντολών που εκτελέστηκαν (committed) κατά τη διάρκεια της εξομοίωσης.
 	Αντιπροσωπεύει το πλήθος των εντολών που έχουν περάσει τη φάση commit στον pipeline της CPU.
- 
+ ![εικόνα](https://github.com/user-attachments/assets/14a682c3-f27e-44b2-9943-4b5b865f62a3)
+
 
 	host_inst_rate:
 	Είναι ο ρυθμός εκτέλεσης εντολών ανά δευτερόλεπτο στον υπολογιστή που φιλοξενεί τον εξομοιωτή (host machine).
 	Δείχνει πόσο αποδοτικά εκτελείται η προσομοίωση στον πραγματικό υπολογιστή.
+![εικόνα](https://github.com/user-attachments/assets/ff0091a6-2bf6-406b-bf5c-2849785180d5)
  
 
 (c) Το συνολικό νούμερο των "committed" εντολών βρίσκεται στα στατιστικά (stats.txt) και είναι 5027.
+![εικόνα](https://github.com/user-attachments/assets/18aa4221-4008-4321-b07b-3c72f3bf6410)
  
 system.cpu_cluster.cpus.committedInsts           5027                       # Number of instructions committed
 system.cpu_cluster.cpus.committedOps             5831                       # Number of ops (including micro ops) committed
   Η διαφορά προκύπτει επειδή τα στατιστικά που παράγονται από τον gem5 περιλαμβάνουν μόνο committed εντολές. Κάποιες εντολές μπορεί να έχουν αποτύχει ή να έχουν σταματήσει πριν το στάδιο commit (π.χ., λόγω branch misprediction). Επίσης, ο gem5 μπορεί να εκτελεί εσωτερικές εντολές (π.χ., λειτουργίες boot) που δεν καταγράφονται ως "committed" από τον χρήστη.
 
 (d) Οι προσπελάσεις στην L2 cache βρίσκονται στο αρχείο stats.txt και είναι 474.
- 
+ ![εικόνα](https://github.com/user-attachments/assets/3286ff42-c042-450d-b3f2-710c019e728f)
+
 system.cpu_cluster.l2.overall_accesses::total          474                       # number of overall (read+write) accesses
 Μπορούμε να υπολογίσουμε τις προσπελάσεις στην L2 από τις προσπελάσεις της μνήμης και τις αποτυχίες (misses) στις L1 caches:
 Προσπελάσεις L2 = Misses L1I + Misses L1D
@@ -137,10 +154,12 @@ system.cpu_cluster.cpus.icache.overall_misses::total = Z1 system.cpu_cluster.cpu
 	Εστιάζει στη σωστή αλληλουχία των γεγονότων (timing) και προσφέρει ακριβείς χρονομετρήσεις για εντολές, αλλά δεν προσομοιώνει λεπτομερώς όλα τα στάδια του pipeline.
 (a)  Για το ερώτημα αυτό δημιουργήσαμε ένα πρόγραμμα σε C το οποίο να υλοποιεί την ακολουθία Fibonacci και εκτελέστε το στον gem5 χρησιμοποιώντας διαφορετικά μοντέλα CPU και κρατώντας όλες τις άλλες παραμέτρους ίδιες. Χρησιμοποιήσαμε αρχικά MinorCPU και μετά TimingSimpleCPU. Ελέγξαμε το αρχείο stats.txt που παράγει ο gem5 για να βρείτε τον χρόνο εκτέλεσης (π.χ., sim_seconds) αντίστοιχα.
 MinorCPU:
+![εικόνα](https://github.com/user-attachments/assets/ae2ab81e-e050-4674-9167-6fe10adb91b3)
+![εικόνα](https://github.com/user-attachments/assets/686455d7-a808-474c-88c1-4432e9b60c2f)
    
- 
-
 TimingSimpleCPU:
+![εικόνα](https://github.com/user-attachments/assets/0b094005-8591-4939-91bd-3e0283bb9788)
+![εικόνα](https://github.com/user-attachments/assets/957f6313-9419-4999-bae5-ff1247864d13)
   
 (b)  Διαφορές και Επεξήγηση Αποτελεσμάτων
 	MinorCPU: Προσομοιώνει πλήρως όλα τα στάδια του pipeline, επομένως η εκτέλεση είναι πιο αργή. Ο χρόνος εκτέλεσης (sim_seconds) αναμένεται να είναι μεγαλύτερος από το TimingSimpleCPU.
@@ -150,12 +169,18 @@ TimingSimpleCPU:
 C) Αλλαγή Παραμέτρων 
 1. Αλλαγή Συχνότητας CPU
 MinorCPU:
+![εικόνα](https://github.com/user-attachments/assets/dfcb9c46-cbd8-4de9-b1d2-ddf58cc09236)
+![εικόνα](https://github.com/user-attachments/assets/d3eb6eae-0fc6-4f3b-9745-42560d57ee09)
   
 TimingSimpleCPU:
+![εικόνα](https://github.com/user-attachments/assets/6d0e24a6-58c5-4296-acce-ab999560229c)
+![εικόνα](https://github.com/user-attachments/assets/e711bfa7-a111-466e-8d80-1651b7c51616)
   
 
 2) Αλλαγή Τεχνολογίας Μνήμης
 DDR4_2400_8X8:
+![εικόνα](https://github.com/user-attachments/assets/2b95bc52-1633-4196-8116-2cfea4586b10)
+![εικόνα](https://github.com/user-attachments/assets/2186fdcd-4b70-40dd-ba28-a37cb54672b1)
    
 
 
@@ -176,6 +201,11 @@ DDR3_1600_8x8:
 ΜΕΡΟΣ ΔΕΥΤΕΡΟ
 Βήμα 1ο 
 Στο δεύτερο μέρος της εργασίας ασχοληθήκαμε με την εκτέλεση των SPEC CPU2006 benchmarks στον gem5 είναι μια κοινή προσέγγιση για την ανάλυση της απόδοσης των συστημάτων. Τα SPEC benchmarks είναι σύνολα προγραμμάτων που σχεδιάστηκαν για να αξιολογούν την απόδοση των υπολογιστικών συστημάτων, και ειδικότερα των CPUs, μέσω πραγματικών workloads.
+![εικόνα](https://github.com/user-attachments/assets/b3f07f0e-1e84-4869-a352-2019682f29c2)
+![εικόνα](https://github.com/user-attachments/assets/8ab92ec1-bb51-45b6-86f7-36a606c6cdff)
+![εικόνα](https://github.com/user-attachments/assets/fc0cc730-2e85-45fe-adee-fb28149b75a7)
+![εικόνα](https://github.com/user-attachments/assets/aa91df20-789d-4f15-b44f-8b485a852766)
+![εικόνα](https://github.com/user-attachments/assets/318b1f57-d3da-4abe-92fe-e7d034c245c5)
  
   
      
@@ -193,8 +223,11 @@ Associativity:
 Το πεδίο assoc=8 αντιπροσωπεύει τον συσχετισμό (associativity) της L2 cache.
 Tο μέγεθος της cache line είναι 64.
 
+
+
  2) Από το αρχείο stats.txt βρήκαμε τα εξείς:
-	Στο specbzip
+
+ 	Στο specbzip
 i) Χρόνος Εκτέλεσης (sim_seconds) = 0.045961
 ii) CPI (Cycles Per Instruction):
 Υπολογίζεται ως: CPI=(system.cpu.numCycles)/(system.cpu.committedInsts)= 1.8855
@@ -262,7 +295,12 @@ system.l2.overall_miss_rate::total           0.000020
 
 
 ΓΡΑΦΗΜΜΑΤΑ:
-    
+![εικόνα](https://github.com/user-attachments/assets/8ba17ca4-03c2-423f-8fc3-c1e4123c0a09)
+![εικόνα](https://github.com/user-attachments/assets/271d07f9-b6ef-493c-a9c0-644530d0a65b)
+![εικόνα](https://github.com/user-attachments/assets/603d1bc8-560a-4b20-b8ab-0687c7fa4cd1)
+![εικόνα](https://github.com/user-attachments/assets/6b963fd7-701d-4ab3-b57d-a0270ae69571)
+![εικόνα](https://github.com/user-attachments/assets/44a34135-4ee2-4242-8085-841e52151c98)
+       
 
        
 
@@ -272,16 +310,20 @@ system.l2.overall_miss_rate::total           0.000020
 	Ο χρόνος εκτέλεσης αυξάνεται σταδιακά ανάλογα με το benchmark.
 	Το jeng έχει τον μεγαλύτερο χρόνο εκτέλεσης, ενώ το bzip τον μικρότερο.
 	Αυτό υποδεικνύει ότι το jeng απαιτεί σημαντικά περισσότερους πόρους.
+
 2. CPI (Cycles Per Instruction):
 	Το CPI είναι πολύ υψηλό για το jeng, κάτι που συνάδει με τον αυξημένο χρόνο εκτέλεσης.
 	Τα benchmarks hmmer και bzip έχουν χαμηλό CPI, δείχνοντας καλύτερη απόδοση.
 	Η συσχέτιση μεταξύ CPI και χρόνου εκτέλεσης είναι εμφανής.
+
 3. Miss Rates - L1 Instruction Cache:
 	Το mcf και το jeng παρουσιάζουν σχετικά υψηλά Miss Rates.
 	Τα benchmarks bzip και hmmer έχουν σχεδόν μηδενικά Miss Rates, υποδεικνύοντας ότι η L1 Instruction Cache είναι πολύ αποδοτική σε αυτά.
+
 4. Miss Rates - L1 Data Cache:
 	Το libquantum έχει τον υψηλότερο Miss Rate στη L1 Data Cache, γεγονός που υποδηλώνει συχνές αστοχίες.
 	Τα υπόλοιπα benchmarks έχουν πολύ χαμηλά Miss Rates, κάτι που δείχνει αποδοτική χρήση της L1 Data Cache.
+
 5. Miss Rates - L2 Cache:
 	Το bzip και το libquantum έχουν εξαιρετικά υψηλά Miss Rates στην L2 Cache.
 	Το hmmer έχει σχετικά χαμηλά Miss Rates, που ενδέχεται να συμβάλλουν στην καλύτερη απόδοσή του.
@@ -294,9 +336,9 @@ system.l2.overall_miss_rate::total           0.000020
 
 
 3) Τρέξαμε ξανά τα benchmarks στον gem5 με τον ίδιο τρόπο με προηγουμένως αλλά αυτή τη φορά προσθέστε και την παράμετρο --cpu-clock=1GHz και --cpu-clock=3GHz.
-	1GHz	2GHz (default)	3GHz
+				1GHz	2GHz (default)	3GHz
 system.clk_domain.clock	1000	1000	1000
-cpu_cluster.clk_domain.clock	1000	500	333
+cpu_cluster.clk_domain.clock	1000	500		333
 
 system.clk_domain.clock = 1000 MHz (1 GHz): Η συχνότητα του ρολογιού του συστήματος παραμένει σταθερή σε 1 GHz, ανεξαρτήτως της συχνότητας των CPU clusters. Αυτή η συχνότητα αφορά το γενικό χρονισμό του συστήματος, όπως τη μετάδοση δεδομένων μεταξύ μονάδων, μνήμης, κλπ.
 cpu_cluster.clk_domain.clock:
@@ -338,6 +380,8 @@ system.l2.overall_miss_rate::total           0.282159
 
 
 
+
+
 Βήμα 2ο 
 Εύρεση Βέλτιστων Τιμών Παραμέτρων
 Το υποσύστημα μνήμης επηρεάζει άμεσα την απόδοση του επεξεργαστή. CPI μεγαλύτερο από 1 υποδεικνύει καθυστερήσεις λόγω αστοχιών (misses) στις μνήμες cache. Για τη μεγιστοποίηση της απόδοσης, εξετάζονται οι παρακάτω παράμετροι:
@@ -350,6 +394,7 @@ system.l2.overall_miss_rate::total           0.282159
 - Μέγεθος cache line
 
 ΕΡΩΤΗΜΑΤΑ:
+
 Ανάλυση Αποτελεσμάτων για το bzip
 Χρόνος Εκτέλεσης (sim_seconds = 0.045961):
 Ο χρόνος εκτέλεσης είναι πολύ χαμηλός, γεγονός που υποδεικνύει ότι το σύστημα διαχειρίζεται αποτελεσματικά την εκτέλεση του προγράμματος.
@@ -361,12 +406,15 @@ Miss Rates:
 	L2 Cache Miss Rate: 0.936016 (Εξαιρετικά υψηλό, απαιτεί άμεση βελτίωση).
 	
 Προτεινόμενες Αλλαγές Παραμέτρων
+
 L1 Instruction Cache Sizes (l1_icache_sizes):
 Η L1 Instruction Cache έχει εξαιρετικό miss rate, επομένως δεν απαιτεί αλλαγή.
 	Προτεινόμενη Τιμή: 32kB.
+
 L1 Data Cache Sizes (l1_dcache_sizes):
 Η L1 Data Cache παρουσιάζει αποδεκτό miss rate, αλλά μπορεί να δοκιμαστεί μεγαλύτερο μέγεθος για μικρή περαιτέρω βελτίωση.
 	Προτεινόμενες Τιμές: 32kB, 64kB.
+
 L2 Cache Sizes (l2_cache_sizes):
 Η L2 Cache έχει εξαιρετικά υψηλό miss rate. Η αύξηση του μεγέθους της είναι κρίσιμη για τη μείωση των misses.
 	Προτεινόμενες Τιμές: 4MB, 8MB.
