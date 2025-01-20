@@ -201,6 +201,7 @@ DDR3_1600_8x8:
 ΜΕΡΟΣ ΔΕΥΤΕΡΟ
 Βήμα 1ο 
 Στο δεύτερο μέρος της εργασίας ασχοληθήκαμε με την εκτέλεση των SPEC CPU2006 benchmarks στον gem5 είναι μια κοινή προσέγγιση για την ανάλυση της απόδοσης των συστημάτων. Τα SPEC benchmarks είναι σύνολα προγραμμάτων που σχεδιάστηκαν για να αξιολογούν την απόδοση των υπολογιστικών συστημάτων, και ειδικότερα των CPUs, μέσω πραγματικών workloads.
+
 ![εικόνα](https://github.com/user-attachments/assets/b3f07f0e-1e84-4869-a352-2019682f29c2)
 ![εικόνα](https://github.com/user-attachments/assets/8ab92ec1-bb51-45b6-86f7-36a606c6cdff)
 ![εικόνα](https://github.com/user-attachments/assets/fc0cc730-2e85-45fe-adee-fb28149b75a7)
@@ -226,6 +227,7 @@ Tο μέγεθος της cache line είναι 64.
 
 
  2) Από το αρχείο stats.txt βρήκαμε τα εξείς:
+
 
  	Στο specbzip
 i) Χρόνος Εκτέλεσης (sim_seconds) = 0.045961
@@ -295,6 +297,7 @@ system.l2.overall_miss_rate::total           0.000020
 
 
 ΓΡΑΦΗΜΜΑΤΑ:
+
 ![εικόνα](https://github.com/user-attachments/assets/8ba17ca4-03c2-423f-8fc3-c1e4123c0a09)
 ![εικόνα](https://github.com/user-attachments/assets/271d07f9-b6ef-493c-a9c0-644530d0a65b)
 ![εικόνα](https://github.com/user-attachments/assets/603d1bc8-560a-4b20-b8ab-0687c7fa4cd1)
