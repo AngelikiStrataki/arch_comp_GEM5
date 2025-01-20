@@ -28,7 +28,9 @@ Email: angeliksi@ece.auth.gr
 Βήμα 2ο
 Ερωτήματα Πρώτου Μέρους 1
 	Στο αρχείο starter_se.py εντοπίσαμε τις βασικές παραμέτρους του συστήματος που πρόκειται να εξομοιωθεί από τον gem5.
-	Τύπος CPU, Caches:
+	Τύπος CPU, 
+ 	
+  	Caches:
  
 ![εικόνα](https://github.com/user-attachments/assets/e1ceb820-c1af-4e40-ae92-03a23e49a564)
 ![εικόνα](https://github.com/user-attachments/assets/8628a6c8-ffc8-47a5-ad7f-2cface063b0f)
@@ -101,6 +103,8 @@ Bus	SystemXBar
 
 Στο config.json:
 Αντίστοιχα σε αυτό το αρχείο βρήκαμε πάλι τα ίδια.
+
+
     ![εικόνα](https://github.com/user-attachments/assets/3c99c1c0-c784-4a70-b9a9-346eb8c98e96)
 ![εικόνα](https://github.com/user-attachments/assets/1598f35c-45e0-4bbf-84ea-4ab816d5c3e9)
 ![εικόνα](https://github.com/user-attachments/assets/475c20a3-7713-44a8-9252-4f84535ff9eb)
@@ -108,7 +112,9 @@ Bus	SystemXBar
 
 
 (b) Τι είναι τα sim_seconds, sim_insts, και host_inst_rate:
-	sim_seconds:
+	
+ 
+ 	sim_seconds:
 	Είναι ο συνολικός χρόνος σε δευτερόλεπτα προσομοίωσης που πέρασε μέσα στο σύστημα που εξομοιώνεται.
 	Αντιπροσωπεύει το χρόνο που μετράει το εξομοιωμένο σύστημα (όχι ο χρόνος στον πραγματικό υπολογιστή που εκτελεί την προσομοίωση).
  ![εικόνα](https://github.com/user-attachments/assets/7232c754-f24d-4e3a-9122-6dc655fa888a)
