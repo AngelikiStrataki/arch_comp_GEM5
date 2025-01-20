@@ -421,16 +421,22 @@ L1 Data Cache Sizes (l1_dcache_sizes):
 L2 Cache Sizes (l2_cache_sizes):
 Η L2 Cache έχει εξαιρετικά υψηλό miss rate. Η αύξηση του μεγέθους της είναι κρίσιμη για τη μείωση των misses.
 	Προτεινόμενες Τιμές: 4MB, 8MB.
+
+ 
 Associativities:
+
 	L1 Instruction Cache Associativity (l1_icache_associativities):
 Το associativity μπορεί να παραμείνει σταθερό, καθώς η L1 Instruction Cache λειτουργεί αποτελεσματικά.
 	Προτεινόμενη Τιμή: 2/4.
-	L1 Data Cache Associativity (l1_dcache_associativities):
+	
+ L1 Data Cache Associativity (l1_dcache_associativities):
 Η L1 Data Cache μπορεί να διατηρηθεί ως έχει, αλλά μεγαλύτερο associativity μπορεί να μειώσει περαιτέρω τα conflict misses.
 	Προτεινόμενη Τιμή: 4/8.
-	L2 Cache Associativity (l2_cache_associativities):
+	
+ L2 Cache Associativity (l2_cache_associativities):
 Η αύξηση του associativity μπορεί να μειώσει το πολύ υψηλό miss rate της L2 Cache.
 	Προτεινόμενη Τιμή: 8.
+
 Cache Line Sizes (cache_line_sizes):
 Η αύξηση του cache line size μπορεί να είναι αποδοτική για το συγκεκριμένο benchmark, καθώς συχνά διαχειρίζεται μεγάλες ποσότητες σειριακών δεδομένων.
 	Προτεινόμενες Τιμές: 64 bytes, 128 bytes.
@@ -439,7 +445,9 @@ Cache Line Sizes (cache_line_sizes):
  
  
 Ανάλυση Αποτελεσμάτων για το mcf
+
 Χρόνος Εκτέλεσης (sim_seconds = 0.064955):
+
 Ο χρόνος εκτέλεσης είναι σχετικά μικρός, αλλά το σύστημα μπορεί να επωφεληθεί από βελτιώσεις στην απόδοση, κυρίως λόγω των miss rates και του CPI που παρατηρούνται.
 CPI (1.2990):
 Το CPI είναι υψηλότερο από το ιδανικό (1.0), κάτι που υποδεικνύει ότι το σύστημα υποφέρει από καθυστερήσεις στην προσπέλαση μνήμης και άλλους περιορισμούς στην εκτέλεση. Παρά το γεγονός ότι το CPI δεν είναι υπερβολικά υψηλό, υπάρχουν περιθώρια βελτίωσης στην αρχιτεκτονική της μνήμης για καλύτερη απόδοση.
@@ -447,72 +455,98 @@ CPI (1.2990):
 Όπου:
 	system.cpu.numCycles = 129909477
 	system.cpu.committedInsts = 100000001
+
 Miss Rates:
 	Instruction Cache Miss Rate (icache): 0.023612 (Αποδεκτό, αλλά μπορεί να βελτιωθεί).
 	Data Cache Miss Rate (dcache): 0.002108 (Πολύ καλό, δεν απαιτεί άμεση αλλαγή).
 	L2 Cache Miss Rate: 0.055046 (Υψηλό, απαιτεί βελτίωση).
+
 Προτεινόμενες Αλλαγές Παραμέτρων:
 	L1 Instruction Cache Sizes (l1_icache_sizes):
+
 Η L1 Instruction Cache έχει κάποιο miss rate που μπορεί να μειωθεί με την αύξηση του μεγέθους της. Η αύξηση του μεγέθους μπορεί να μειώσει τα misses στην Instruction Cache, καθώς το σύστημα πιθανόν να έχει μεγαλύτερες ανάγκες μνήμης για τις εντολές.
 	Προτεινόμενες Τιμές: 32kB, 64kB.
-	L1 Data Cache Sizes (l1_dcache_sizes):
+
+ L1 Data Cache Sizes (l1_dcache_sizes):
 Η L1 Data Cache έχει πολύ καλό miss rate, αλλά η αύξηση του μεγέθους της μπορεί να βοηθήσει περαιτέρω στη μείωση των misses, ιδιαίτερα όταν οι εφαρμογές εκτελούν μεγάλες εργασίες δεδομένων.
 	Προτεινόμενες Τιμές: 64kB, 128kB.
 	L2 Cache Sizes (l2_cache_sizes):
+
 Η L2 Cache έχει αρκετά υψηλό miss rate, γεγονός που επηρεάζει την απόδοση. Η αύξηση του μεγέθους της L2 Cache μπορεί να βοηθήσει στη μείωση των misses και στην καλύτερη διαχείριση μεγάλων δεδομένων.
 	Προτεινόμενη Τιμή: 4MB.
-	L1 Instruction Cache Associativity (l1_icache_associativities):
+
+ L1 Instruction Cache Associativity (l1_icache_associativities):
 Η L1 Instruction Cache μπορεί να επωφεληθεί από αύξηση του associativity για την καλύτερη διαχείριση των δεδομένων και τη μείωση των misses. Μία μικρή αύξηση του associativity μπορεί να βελτιώσει την απόδοση χωρίς να προκαλέσει υπερβολικές καθυστερήσεις.
 	Προτεινόμενες Τιμές: 2, 4.
-	L1 Data Cache Associativity (l1_dcache_associativities):
+
+ L1 Data Cache Associativity (l1_dcache_associativities):
 Η L1 Data Cache μπορεί να έχει χαμηλότερο associativity, αλλά η αύξησή του μπορεί να μειώσει τα conflict misses και να βελτιώσει τη συνολική απόδοση, ειδικά σε workloads με μεγαλύτερη ανάγκη πρόσβασης στη μνήμη.
 	Προτεινόμενες Τιμές: 4, 8.
-	L2 Cache Associativity (l2_cache_associativities):
+
+ L2 Cache Associativity (l2_cache_associativities):
 Η L2 Cache έχει σημαντικό miss rate, και η αύξηση του associativity μπορεί να μειώσει το miss rate και να ενισχύσει την απόδοση της Cache. Αν και το 8-way associativity μπορεί να οδηγήσει σε μικρότερη καθυστέρηση για τις αναγνώσεις, βοηθά στην αποδοτικότερη διαχείριση των δεδομένων.
 	Προτεινόμενη Τιμή: 8.
-	Cache Line Sizes (cache_line_sizes):
+
+ Cache Line Sizes (cache_line_sizes):
 Η αύξηση του cache line size μπορεί να είναι αποδοτική για την εκτέλεση συγκεκριμένων benchmarks, ιδίως όταν οι δεδομένα που επεξεργάζονται είναι μεγάλα και συνεχόμενα. Η αύξηση του cache line μπορεί να μειώσει τα misses και να βελτιώσει την απόδοση.
 	Προτεινόμενες Τιμές: 32 bytes, 64 bytes.
+
+
 Συνοπτικά:
 Οι αλλαγές που προτείνονται έχουν στόχο την ενίσχυση της απόδοσης του συστήματος, κυρίως μέσω της βελτίωσης της διαχείρισης της μνήμης. Οι μεγάλες caches (L1 και L2) με υψηλότερο associativity θα βοηθήσουν στη μείωση των misses και στη βελτίωση της εκτέλεσης, ενώ η αύξηση του cache line size θα βοηθήσει στην καλύτερη διαχείριση των δεδομένων που είναι κοντά μεταξύ τους στον χώρο μνήμης.
   
  
  
 Ανάλυση Αποτελεσμάτων για το hmmer
+
 Χρόνος Εκτέλεσης (sim_seconds = 0.059396):
 Ο χρόνος εκτέλεσης είναι σχετικά μικρός, δείχνοντας ότι το σύστημα διαχειρίζεται καλά τη φόρτιση εργασίας. Ωστόσο, η απόδοση μπορεί να βελτιωθεί περαιτέρω, όπως υποδεικνύεται από το CPI και τα miss rates.
+
 CPI (1.1879165):
 Το CPI είναι κοντά στο βέλτιστο και υποδεικνύει ότι ο επεξεργαστής εκτελεί τις εντολές με αποδοτικότητα. Ωστόσο, το CPI δεν είναι 1.0, γεγονός που δείχνει ότι υπάρχουν κάποια περιθώρια βελτίωσης, πιθανώς λόγω καθυστερήσεων στην προσπέλαση μνήμης ή άλλων περιορισμών στο σύστημα.
+
 Υπολογισμός CPI: CPI = (system.cpu.numCycles) / (system.cpu.committedInsts) = 1.1879165
+
 Όπου:
 	system.cpu.numCycles = 118791650
 	system.cpu.committedInsts = 100000000
+
 Miss Rates:
 	Instruction Cache Miss Rate (icache): 0.000221 (Πολύ καλό, δεν απαιτεί αλλαγές).
 	Data Cache Miss Rate (dcache): 0.001637 (Αποδεκτό, μπορεί να βελτιωθεί).
 	L2 Cache Miss Rate: 0.077760 (Πολύ υψηλό, απαιτεί βελτίωση).
+
 Προτεινόμενες Αλλαγές Παραμέτρων:
 	L1 Instruction Cache Sizes (l1_icache_sizes):
+
 Η L1 Instruction Cache έχει καλό miss rate και δεν απαιτεί άμεση αλλαγή. Ωστόσο, δεν υπάρχουν μεγάλα περιθώρια για βελτίωση εδώ.
 	Προτεινόμενη Τιμή: 32kB.
-	L1 Data Cache Sizes (l1_dcache_sizes):
+
+ L1 Data Cache Sizes (l1_dcache_sizes):
 Η L1 Data Cache παρουσιάζει αποδεκτό miss rate, αλλά η αύξηση του μεγέθους μπορεί να μειώσει το miss rate και να βελτιώσει την απόδοση.
 	Προτεινόμενες Τιμές: 32kB, 64kB.
-	L2 Cache Sizes (l2_cache_sizes):
+
+ L2 Cache Sizes (l2_cache_sizes):
 Η L2 Cache έχει πολύ υψηλό miss rate, γεγονός που δείχνει ότι είναι ο βασικός περιοριστικός παράγοντας στην απόδοση του συστήματος. Η αύξηση του μεγέθους της L2 Cache είναι κρίσιμη για τη βελτίωση της απόδοσης.
 	Προτεινόμενη Τιμή: 4MB.
-	L1 Instruction Cache Associativity (l1_icache_associativities):
+
+ L1 Instruction Cache Associativity (l1_icache_associativities):
 Η L1 Instruction Cache λειτουργεί καλά με το υπάρχον associativity, όμως αν η απόδοση δεν είναι ικανοποιητική, η αύξηση του associativity μπορεί να μειώσει τα cache misses.
 	Προτεινόμενες Τιμές: 2, 4.
-	L1 Data Cache Associativity (l1_dcache_associativities):
+
+ L1 Data Cache Associativity (l1_dcache_associativities):
 Η L1 Data Cache μπορεί να ωφεληθεί από αύξηση του associativity, μειώνοντας τα conflict misses και ενισχύοντας την απόδοση.
 	Προτεινόμενες Τιμές: 2, 4, 8.
-	L2 Cache Associativity (l2_cache_associativities):
+
+ L2 Cache Associativity (l2_cache_associativities):
 Η αύξηση του associativity στην L2 Cache μπορεί να μειώσει τα misses και να βελτιώσει την απόδοση, δεδομένου του υψηλού miss rate της.
 	Προτεινόμενη Τιμή: 8.
-	Cache Line Sizes (cache_line_sizes):
+
+ Cache Line Sizes (cache_line_sizes):
 Η αύξηση του cache line size μπορεί να είναι επωφελής για συγκεκριμένα benchmarks που απαιτούν μεγάλες μεταφορές δεδομένων και μεγάλα μπλοκ μνήμης. Στην περίπτωση αυτή, η αύξηση του cache line size μπορεί να βοηθήσει στην μείωση των misses και στη βελτίωση της απόδοσης.
 	Προτεινόμενες Τιμές: 64 bytes, 128 bytes.
+
+
 Αυτές οι προτεινόμενες αλλαγές μπορούν να βοηθήσουν στη βελτίωση της απόδοσης του συστήματος για το spechmmer benchmark, μειώνοντας το miss rate της L2 Cache και αυξάνοντας την αποδοτικότητα του συστήματος στη διαχείριση της μνήμης.
  
  
@@ -520,32 +554,44 @@ Miss Rates:
 
  
 Ανάλυση Αποτελεσμάτων για το jeng
+
 Χρόνος Εκτέλεσης (sim_seconds = 0.513528):
 Ο χρόνος εκτέλεσης είναι ικανοποιητικός, όμως υπάρχουν περιθώρια βελτίωσης, κυρίως λόγω του υψηλού CPI που παρατηρείται.
+
 CPI (10.2705):
 Το CPI είναι αρκετά υψηλό, πράγμα που υποδεικνύει ότι ο επεξεργαστής δεν εκτελεί εντολές όσο αποτελεσματικά θα μπορούσε. Αυτός ο υψηλός δείκτης πιθανόν να προέρχεται από καθυστερήσεις στην προσπέλαση της μνήμης, καθώς και από άλλα παραμέτρους του συστήματος που περιορίζουν την αποδοτικότητα της εκτέλεσης.
+
 Υπολογισμός CPI: CPI = (system.cpu.numCycles) / (system.cpu.committedInsts) = 10.2705
+
 Όπου:
 	system.cpu.numCycles = 1027055373
 	system.cpu.committedInsts = 100000000
+
 Miss Rates:
 	Instruction Cache Miss Rate (icache): 0.000020 (Πολύ καλό, δεν απαιτεί αλλαγές).
 	Data Cache Miss Rate (dcache): 0.121831 (Αποδεκτό, αλλά μπορεί να βελτιωθεί).
 	L2 Cache Miss Rate: 0.000020 (Πολύ καλό, δεν απαιτεί αλλαγές).
+
 Προτεινόμενες Αλλαγές Παραμέτρων:
 	L1 Instruction Cache Sizes (l1_icache_sizes): Η L1 Instruction Cache έχει πολύ καλό miss rate, επομένως δεν απαιτεί αλλαγή.
 	Προτεινόμενη Τιμή: 32kB.
-	L1 Data Cache Sizes (l1_dcache_sizes): Η L1 Data Cache έχει αποδεκτό miss rate, και μπορεί να γίνει πείραμα με μεγαλύτερο μέγεθος για βελτίωση.
+
+ L1 Data Cache Sizes (l1_dcache_sizes): Η L1 Data Cache έχει αποδεκτό miss rate, και μπορεί να γίνει πείραμα με μεγαλύτερο μέγεθος για βελτίωση.
 	Προτεινόμενες Τιμές: 64kB, 128kB.
-	L2 Cache Sizes (l2_cache_sizes): Η L2 Cache έχει πολύ καλό miss rate και δεν απαιτεί αλλαγή. Ωστόσο, αν η απόδοση δεν είναι ικανοποιητική, η αύξηση του μεγέθους μπορεί να εξεταστεί.
+	
+ L2 Cache Sizes (l2_cache_sizes): Η L2 Cache έχει πολύ καλό miss rate και δεν απαιτεί αλλαγή. Ωστόσο, αν η απόδοση δεν είναι ικανοποιητική, η αύξηση του μεγέθους μπορεί να εξεταστεί.
 	Προτεινόμενη Τιμή: 4MB.
-	L1 Instruction Cache Associativity (l1_icache_associativities): Το associativity της L1 Instruction Cache φαίνεται να είναι αρκετό, όμως μπορεί να αυξηθεί για καλύτερη απόδοση σε πιο απαιτητικά workloads.
+
+ L1 Instruction Cache Associativity (l1_icache_associativities): Το associativity της L1 Instruction Cache φαίνεται να είναι αρκετό, όμως μπορεί να αυξηθεί για καλύτερη απόδοση σε πιο απαιτητικά workloads.
 	Προτεινόμενη Τιμή: 4.
-	L1 Data Cache Associativity (l1_dcache_associativities): Η L1 Data Cache μπορεί να βελτιωθεί με υψηλότερο associativity, μειώνοντας τα conflict misses και ενισχύοντας την απόδοση.
+
+ L1 Data Cache Associativity (l1_dcache_associativities): Η L1 Data Cache μπορεί να βελτιωθεί με υψηλότερο associativity, μειώνοντας τα conflict misses και ενισχύοντας την απόδοση.
 	Προτεινόμενες Τιμές: 4, 8.
-	L2 Cache Associativity (l2_cache_associativities): Η αύξηση του associativity στην L2 Cache μπορεί να μειώσει τα misses και να βελτιώσει την απόδοση του συστήματος.
+	
+ L2 Cache Associativity (l2_cache_associativities): Η αύξηση του associativity στην L2 Cache μπορεί να μειώσει τα misses και να βελτιώσει την απόδοση του συστήματος.
 	Προτεινόμενη Τιμή: 8.
-	Cache Line Sizes (cache_line_sizes): Η αύξηση του cache line size μπορεί να είναι αποδοτική για τα συγκεκριμένα benchmarks, καθώς μπορεί να μειώσει τις καθυστερήσεις σε συχνές προσβάσεις στην μνήμη.
+	
+ Cache Line Sizes (cache_line_sizes): Η αύξηση του cache line size μπορεί να είναι αποδοτική για τα συγκεκριμένα benchmarks, καθώς μπορεί να μειώσει τις καθυστερήσεις σε συχνές προσβάσεις στην μνήμη.
 	Προτεινόμενες Τιμές: 64 bytes, 128 bytes.
   
   
