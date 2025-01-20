@@ -105,7 +105,7 @@ Bus	SystemXBar
 Αντίστοιχα σε αυτό το αρχείο βρήκαμε πάλι τα ίδια.
 
 
-    ![εικόνα](https://github.com/user-attachments/assets/3c99c1c0-c784-4a70-b9a9-346eb8c98e96)
+![εικόνα](https://github.com/user-attachments/assets/e31279b2-7d33-4fd6-a801-e68e2b88affe)
 ![εικόνα](https://github.com/user-attachments/assets/1598f35c-45e0-4bbf-84ea-4ab816d5c3e9)
 ![εικόνα](https://github.com/user-attachments/assets/475c20a3-7713-44a8-9252-4f84535ff9eb)
 ![εικόνα](https://github.com/user-attachments/assets/394a6982-b2df-441a-abe8-9f9b128bfe91)
