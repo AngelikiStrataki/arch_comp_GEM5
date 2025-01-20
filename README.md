@@ -243,68 +243,119 @@ Tο μέγεθος της cache line είναι 64.
 
  	Στο specbzip
 i) Χρόνος Εκτέλεσης (sim_seconds) = 0.045961
+
 ii) CPI (Cycles Per Instruction):
+
 Υπολογίζεται ως: CPI=(system.cpu.numCycles)/(system.cpu.committedInsts)= 1.8855
+
 Όπου:
+
 system.cpu.numCycles                         91921160
+
 system.cpu.committedInsts                    48749217 
+
 iii) Miss Rates:
+
 system.cpu.icache.overall_miss_rate::total     0.000113
+
 system.cpu.dcache.overall_miss_rate::total     0.005510 
+
 system.l2.overall_miss_rate::total           0.936016
 
 
 	Στο spechmmer
 i) Χρόνος Εκτέλεσης (sim_seconds) = 0.059396
+
 ii) CPI (Cycles Per Instruction):
+
 Υπολογίζεται ως: CPI=(system.cpu.numCycles)/(system.cpu.committedInsts) =1.1879165
+
 Όπου:
 system.cpu.numCycles                         118791650
+
 system.cpu.committedInsts                    100000000 
+
 iii) Miss Rates:
+
 system.cpu.icache.overall_miss_rate::total     0.000221
+
 system.cpu.dcache.overall_miss_rate::total     0.001637
+
 system.l2.overall_miss_rate::total           0.077760
 
 
 	Στο speclibm
+
 i) Χρόνος Εκτέλεσης (sim_seconds) = 0.174671
+
 ii) CPI (Cycles Per Instruction):
+
 Υπολογίζεται ως: CPI=(system.cpu.numCycles)/(system.cpu.committedInsts)=3.4934
 
 Όπου:
+
 system.cpu.numCycles                         349341455
+
 system.cpu.committedInsts                    100000000 
+
 iii) Miss Rates:
+
+
 system.cpu.icache.overall_miss_rate::total     0.000094
+
 system.cpu.dcache.overall_miss_rate::total     0.060972
+
 system.l2.overall_miss_rate::total           0.999944
 
 
+
 	Στο specmcf
+
 i) Χρόνος Εκτέλεσης (sim_seconds) = 0.064955
+
 ii) CPI (Cycles Per Instruction):
+
 Υπολογίζεται ως: CPI=(system.cpu.numCycles)/(system.cpu.committedInsts)=1.2990
+
 Όπου:
+
 system.cpu.numCycles                         129909477
+
 system.cpu.committedInsts                    100000001 
+
 iii) Miss Rates:
+
 system.cpu.icache.overall_miss_rate::total     0.023612
+
+
 system.cpu.dcache.overall_miss_rate::total     0.002108
+
 system.l2.overall_miss_rate::total           0.055046
 
 
+
 	Στο specsjeng
+
 i) Χρόνος Εκτέλεσης (sim_seconds) = 0.513528
+
 ii) CPI (Cycles Per Instruction):
+
 Υπολογίζεται ως: CPI=(system.cpu.numCycles)/(system.cpu.committedInsts)=10.2705
+
 Όπου:
+
 system.cpu.numCycles                         1027055373
+
 system.cpu.committedInsts                    100000000 
+
 iii) Miss Rates:
+
 system.cpu.icache.overall_miss_rate::total     0.000020
+
 system.cpu.dcache.overall_miss_rate::total     0.121831
+
 system.l2.overall_miss_rate::total           0.000020
+
 
 
 
