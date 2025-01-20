@@ -39,14 +39,24 @@ Email: angeliksi@ece.auth.gr
 
  
 	Φυσική μνήμη (RAM):
+ ![εικόνα](https://github.com/user-attachments/assets/5f259e21-aefb-45c6-8ceb-5036fe9d91b9)
+
  
 	Τύπος μνήμης:
+ ![εικόνα](https://github.com/user-attachments/assets/99f96ba8-0670-44b4-b33b-315eeeeb6123)
+
  
 	Αριθμός πυρήνων:
+ ![εικόνα](https://github.com/user-attachments/assets/aba50543-2627-4e72-acf7-ab5d24f3417a)
+
  
 	Cache Line Size:
- 
+ ![εικόνα](https://github.com/user-attachments/assets/198326a5-13a6-46d2-9677-3eeabbe3cce7)
+
+
 	Bus (Δίαυλος μνήμης):
+ ![εικόνα](https://github.com/user-attachments/assets/64a0b0db-531c-4cf8-a687-06ac3784daf7)
+
  
 	Από τη μέθοδο addL1() και addL2() στο αρχείο, αυτές οι caches προστίθενται αν η λειτουργία είναι timing
  
