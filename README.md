@@ -321,25 +321,25 @@ system.l2.overall_miss_rate::total           0.000020
 
  
 Από τα γραφήματα που παρουσιάζονται, μπορούμε να παρατηρήσουμε τα εξής:
-1. Χρόνος Εκτέλεσης (Execution Time):
+i. Χρόνος Εκτέλεσης (Execution Time):
 	Ο χρόνος εκτέλεσης αυξάνεται σταδιακά ανάλογα με το benchmark.
 	Το jeng έχει τον μεγαλύτερο χρόνο εκτέλεσης, ενώ το bzip τον μικρότερο.
 	Αυτό υποδεικνύει ότι το jeng απαιτεί σημαντικά περισσότερους πόρους.
 
-2. CPI (Cycles Per Instruction):
+ii. CPI (Cycles Per Instruction):
 	Το CPI είναι πολύ υψηλό για το jeng, κάτι που συνάδει με τον αυξημένο χρόνο εκτέλεσης.
 	Τα benchmarks hmmer και bzip έχουν χαμηλό CPI, δείχνοντας καλύτερη απόδοση.
 	Η συσχέτιση μεταξύ CPI και χρόνου εκτέλεσης είναι εμφανής.
 
-3. Miss Rates - L1 Instruction Cache:
+iii. Miss Rates - L1 Instruction Cache:
 	Το mcf και το jeng παρουσιάζουν σχετικά υψηλά Miss Rates.
 	Τα benchmarks bzip και hmmer έχουν σχεδόν μηδενικά Miss Rates, υποδεικνύοντας ότι η L1 Instruction Cache είναι πολύ αποδοτική σε αυτά.
 
-4. Miss Rates - L1 Data Cache:
+iv. Miss Rates - L1 Data Cache:
 	Το libquantum έχει τον υψηλότερο Miss Rate στη L1 Data Cache, γεγονός που υποδηλώνει συχνές αστοχίες.
 	Τα υπόλοιπα benchmarks έχουν πολύ χαμηλά Miss Rates, κάτι που δείχνει αποδοτική χρήση της L1 Data Cache.
 
-5. Miss Rates - L2 Cache:
+v. Miss Rates - L2 Cache:
 	Το bzip και το libquantum έχουν εξαιρετικά υψηλά Miss Rates στην L2 Cache.
 	Το hmmer έχει σχετικά χαμηλά Miss Rates, που ενδέχεται να συμβάλλουν στην καλύτερη απόδοσή του.
 
