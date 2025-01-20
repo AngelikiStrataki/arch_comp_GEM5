@@ -242,6 +242,7 @@ Tο μέγεθος της cache line είναι 64.
 
 
  	Στο specbzip
+
 i) Χρόνος Εκτέλεσης (sim_seconds) = 0.045961
 
 ii) CPI (Cycles Per Instruction):
