@@ -29,6 +29,7 @@ Email: angeliksi@ece.auth.gr
 Ερωτήματα Πρώτου Μέρους 1
 	Στο αρχείο starter_se.py εντοπίσαμε τις βασικές παραμέτρους του συστήματος που πρόκειται να εξομοιωθεί από τον gem5.
 	Τύπος CPU, Caches:
+ 
 ![εικόνα](https://github.com/user-attachments/assets/e1ceb820-c1af-4e40-ae92-03a23e49a564)
 ![εικόνα](https://github.com/user-attachments/assets/8628a6c8-ffc8-47a5-ad7f-2cface063b0f)
  
@@ -154,10 +155,12 @@ system.cpu_cluster.cpus.icache.overall_misses::total = Z1 system.cpu_cluster.cpu
 	Εστιάζει στη σωστή αλληλουχία των γεγονότων (timing) και προσφέρει ακριβείς χρονομετρήσεις για εντολές, αλλά δεν προσομοιώνει λεπτομερώς όλα τα στάδια του pipeline.
 (a)  Για το ερώτημα αυτό δημιουργήσαμε ένα πρόγραμμα σε C το οποίο να υλοποιεί την ακολουθία Fibonacci και εκτελέστε το στον gem5 χρησιμοποιώντας διαφορετικά μοντέλα CPU και κρατώντας όλες τις άλλες παραμέτρους ίδιες. Χρησιμοποιήσαμε αρχικά MinorCPU και μετά TimingSimpleCPU. Ελέγξαμε το αρχείο stats.txt που παράγει ο gem5 για να βρείτε τον χρόνο εκτέλεσης (π.χ., sim_seconds) αντίστοιχα.
 MinorCPU:
+
 ![εικόνα](https://github.com/user-attachments/assets/ae2ab81e-e050-4674-9167-6fe10adb91b3)
 ![εικόνα](https://github.com/user-attachments/assets/686455d7-a808-474c-88c1-4432e9b60c2f)
    
 TimingSimpleCPU:
+
 ![εικόνα](https://github.com/user-attachments/assets/0b094005-8591-4939-91bd-3e0283bb9788)
 ![εικόνα](https://github.com/user-attachments/assets/957f6313-9419-4999-bae5-ff1247864d13)
   
@@ -169,16 +172,19 @@ TimingSimpleCPU:
 C) Αλλαγή Παραμέτρων 
 1. Αλλαγή Συχνότητας CPU
 MinorCPU:
+
 ![εικόνα](https://github.com/user-attachments/assets/dfcb9c46-cbd8-4de9-b1d2-ddf58cc09236)
 ![εικόνα](https://github.com/user-attachments/assets/d3eb6eae-0fc6-4f3b-9745-42560d57ee09)
   
 TimingSimpleCPU:
+
 ![εικόνα](https://github.com/user-attachments/assets/6d0e24a6-58c5-4296-acce-ab999560229c)
 ![εικόνα](https://github.com/user-attachments/assets/e711bfa7-a111-466e-8d80-1651b7c51616)
   
 
 2) Αλλαγή Τεχνολογίας Μνήμης
 DDR4_2400_8X8:
+
 ![εικόνα](https://github.com/user-attachments/assets/2b95bc52-1633-4196-8116-2cfea4586b10)
 ![εικόνα](https://github.com/user-attachments/assets/2186fdcd-4b70-40dd-ba28-a37cb54672b1)
    
@@ -440,7 +446,13 @@ Associativities:
 Cache Line Sizes (cache_line_sizes):
 Η αύξηση του cache line size μπορεί να είναι αποδοτική για το συγκεκριμένο benchmark, καθώς συχνά διαχειρίζεται μεγάλες ποσότητες σειριακών δεδομένων.
 	Προτεινόμενες Τιμές: 64 bytes, 128 bytes.
- 
+
+
+ ![εικόνα](https://github.com/user-attachments/assets/45ea190d-f06b-46cb-9851-a510654ff70c)
+![εικόνα](https://github.com/user-attachments/assets/39eabb3f-4880-4fea-99b2-5511cc43d2d0)
+![εικόνα](https://github.com/user-attachments/assets/c515c594-0ab5-4957-acb7-44330d73e95a)
+![εικόνα](https://github.com/user-attachments/assets/9710d881-1250-4964-baee-73730bcf8650)
+
  
  
  
@@ -494,7 +506,13 @@ Miss Rates:
 
 Συνοπτικά:
 Οι αλλαγές που προτείνονται έχουν στόχο την ενίσχυση της απόδοσης του συστήματος, κυρίως μέσω της βελτίωσης της διαχείρισης της μνήμης. Οι μεγάλες caches (L1 και L2) με υψηλότερο associativity θα βοηθήσουν στη μείωση των misses και στη βελτίωση της εκτέλεσης, ενώ η αύξηση του cache line size θα βοηθήσει στην καλύτερη διαχείριση των δεδομένων που είναι κοντά μεταξύ τους στον χώρο μνήμης.
-  
+
+
+  ![εικόνα](https://github.com/user-attachments/assets/9a96fd1f-6947-4d93-9ebe-3c5ae6a589ea)
+![εικόνα](https://github.com/user-attachments/assets/49a05183-c9ee-4a22-a769-df154d0ee9f8)
+![εικόνα](https://github.com/user-attachments/assets/d66c9230-5362-4074-a22b-30f120f33dce)
+![εικόνα](https://github.com/user-attachments/assets/c4d7295d-b151-4e0f-9fd9-678f95beab99)
+
  
  
 Ανάλυση Αποτελεσμάτων για το hmmer
@@ -550,6 +568,12 @@ Miss Rates:
 Αυτές οι προτεινόμενες αλλαγές μπορούν να βοηθήσουν στη βελτίωση της απόδοσης του συστήματος για το spechmmer benchmark, μειώνοντας το miss rate της L2 Cache και αυξάνοντας την αποδοτικότητα του συστήματος στη διαχείριση της μνήμης.
  
  
+ ![εικόνα](https://github.com/user-attachments/assets/9348ae4a-ad0a-4cea-861e-6e84e4184e16)
+![εικόνα](https://github.com/user-attachments/assets/eab8a1d3-bbd7-41fc-a172-cbef49a73f25)
+![εικόνα](https://github.com/user-attachments/assets/dbeb111c-80d3-4cfd-8270-3aebf9a0bcea)
+![εικόνα](https://github.com/user-attachments/assets/0d5ee987-04d6-40be-a1b0-c23f027777ad)
+
+ 
  
 
  
@@ -593,47 +617,78 @@ Miss Rates:
 	
  Cache Line Sizes (cache_line_sizes): Η αύξηση του cache line size μπορεί να είναι αποδοτική για τα συγκεκριμένα benchmarks, καθώς μπορεί να μειώσει τις καθυστερήσεις σε συχνές προσβάσεις στην μνήμη.
 	Προτεινόμενες Τιμές: 64 bytes, 128 bytes.
-  
+
+
+  ![εικόνα](https://github.com/user-attachments/assets/ff2e34ea-ac1e-4e53-9a9b-918a45597971)
+![εικόνα](https://github.com/user-attachments/assets/88294a7a-03c8-4082-8bf6-aa27bdd6264f)
+![εικόνα](https://github.com/user-attachments/assets/8640eb43-d459-40c3-9eb9-5aa5b6d98ea6)
+![εικόνα](https://github.com/user-attachments/assets/4d1a1c98-108b-42fd-a548-e15a9e15ced4)
+
+
+
+
+
   
 Ανάλυση Αποτελεσμάτων για το libm
+
 Χρόνος Εκτέλεσης (sim_seconds = 0.174671):
+
 Ο χρόνος εκτέλεσης είναι σχετικά υψηλός, κάτι που υποδεικνύει ότι το σύστημα ενδέχεται να επηρεάζεται από καθυστερήσεις που σχετίζονται με την προσπέλαση στη μνήμη. Ο χρόνος εκτέλεσης μπορεί να μειωθεί με βελτιώσεις στη διαχείριση της μνήμης και τη βελτίωση των miss rates.
+
 CPI (3.4934):
 Το CPI είναι εξαιρετικά υψηλό, γεγονός που υποδεικνύει ότι ο επεξεργαστής εκτελεί τις εντολές με αργό ρυθμό λόγω καθυστερήσεων στην προσπέλαση της μνήμης. Ο υψηλός CPI συνήθως υποδηλώνει ότι το σύστημα χρειάζεται περισσότερο χρόνο για να επεξεργαστεί κάθε εντολή, κάτι που σχετίζεται με τα υψηλά miss rates στην Cache.
+
 Υπολογισμός CPI: CPI = (system.cpu.numCycles) / (system.cpu.committedInsts) = 3.4934
+
 Όπου:
 	system.cpu.numCycles = 349341455
 	system.cpu.committedInsts = 100000000
+
 Miss Rates:
 	Instruction Cache Miss Rate (icache): 0.000094 (Πολύ καλό, δεν απαιτεί αλλαγές).
 	Data Cache Miss Rate (dcache): 0.060972 (Υψηλό, χρειάζεται βελτίωση).
 	L2 Cache Miss Rate: 0.999944 (Πολύ υψηλό, απαιτεί άμεση βελτίωση).
+
 Προτεινόμενες Αλλαγές Παραμέτρων:
 	L1 Instruction Cache Sizes (l1_icache_sizes):
+
 Η L1 Instruction Cache έχει εξαιρετικά καλό miss rate, επομένως δεν απαιτεί αλλαγή.
 	Προτεινόμενη Τιμή: 32kB.
-	L1 Data Cache Sizes (l1_dcache_sizes):
+	
+ L1 Data Cache Sizes (l1_dcache_sizes):
 Η L1 Data Cache έχει αρκετά υψηλό miss rate και η αύξηση του μεγέθους της μπορεί να μειώσει σημαντικά τα misses και να βελτιώσει την απόδοση του συστήματος.
 	Προτεινόμενες Τιμές: 64kB, 128kB.
-	L2 Cache Sizes (l2_cache_sizes):
+	
+ L2 Cache Sizes (l2_cache_sizes):
 Η L2 Cache έχει εξαιρετικά υψηλό miss rate, κάτι που οδηγεί σε σημαντικές καθυστερήσεις και επηρεάζει αρνητικά την απόδοση του συστήματος. Η αύξηση του μεγέθους της L2 Cache είναι κρίσιμη για τη μείωση των misses και τη βελτίωση της συνολικής απόδοσης.
 	Προτεινόμενη Τιμή: 4MB.
-	L1 Instruction Cache Associativity (l1_icache_associativities):
+
+ L1 Instruction Cache Associativity (l1_icache_associativities):
 Η L1 Instruction Cache μπορεί να παραμείνει ως έχει, δεδομένου ότι το miss rate είναι ήδη πολύ χαμηλό. Ωστόσο, αν η απόδοση του συστήματος δεν είναι ικανοποιητική, η αύξηση του associativity μπορεί να προσφέρει επιπλέον βελτίωση.
 	Προτεινόμενες Τιμές: 2, 4.
-	L1 Data Cache Associativity (l1_dcache_associativities):
+
+ L1 Data Cache Associativity (l1_dcache_associativities):
 Η L1 Data Cache εμφανίζει υψηλό miss rate και η αύξηση του associativity μπορεί να μειώσει τα conflict misses και να βελτιώσει την απόδοση.
 	Προτεινόμενες Τιμές: 4, 8.
-	L2 Cache Associativity (l2_cache_associativities):
+
+ L2 Cache Associativity (l2_cache_associativities):
 Η L2 Cache εμφανίζει εξαιρετικά υψηλό miss rate, και η αύξηση του associativity είναι κρίσιμη για τη μείωση των misses και την ενίσχυση της απόδοσης της Cache.
 	Προτεινόμενη Τιμή: 8.
-	Cache Line Sizes (cache_line_sizes):
+	
+ Cache Line Sizes (cache_line_sizes):
 Η αύξηση του cache line size μπορεί να βελτιώσει την απόδοση, καθώς η επεξεργασία μεγάλων δεδομένων σε μεγαλύτερες γραμμές μνήμης μπορεί να μειώσει τα misses. Σε περιπτώσεις όπως αυτή, με μεγάλες ανάγκες για μεταφορές δεδομένων, η αύξηση του cache line size μπορεί να προσφέρει σημαντική βελτίωση.
 	Προτεινόμενες Τιμές: 64 bytes, 128 bytes.
+
+
 Συνοπτικά:
 Το σύστημα υποφέρει από πολύ υψηλά miss rates στην L2 Cache, τα οποία επηρεάζουν σημαντικά την απόδοση και οδηγούν σε υψηλό CPI. Η αύξηση του μεγέθους των L1 και L2 Caches, μαζί με την αύξηση του associativity και του cache line size, θα βοηθήσει στη μείωση των misses και στην καλύτερη διαχείριση της μνήμης, προσφέροντας καλύτερη συνολική απόδοση.
   
-  
+
+  ![εικόνα](https://github.com/user-attachments/assets/b2a109c8-b731-4778-af68-d2b67447aa9c)
+![εικόνα](https://github.com/user-attachments/assets/202eaffe-a003-4c56-b54d-a845f8767333)
+![εικόνα](https://github.com/user-attachments/assets/b477e029-2546-49a5-8723-5252feb9cd13)
+![εικόνα](https://github.com/user-attachments/assets/c356ba1b-033c-4199-83c6-38d17dfcadbf)
+
 
 
 
