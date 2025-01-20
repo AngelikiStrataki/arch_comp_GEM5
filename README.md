@@ -23,7 +23,7 @@ Email: angeliksi@ece.auth.gr
 
 ΜΕΡΟΣ ΠΡΩΤΟ
 Βήμα 1ο
-Χρησιμοποιήσαμε το έτοιμο ένα πρόγραμμα virtualization, συγκεκριμένα το VM VMWare Workstation Player 15.
+Χρησιμοποίησαμε το έτοιμο ένα πρόγραμμα virtualization, συγκεκριμένα το VM VMWare Workstation Player 15.
 
 Βήμα 2ο
 Ερωτήματα Πρώτου Μέρους 1
