@@ -177,18 +177,25 @@ TimingSimpleCPU:
 
 C) Αλλαγή Παραμέτρων 
 1. Αλλαγή Συχνότητας CPU
-MinorCPU:
 
-![εικόνα](https://github.com/user-attachments/assets/dfcb9c46-cbd8-4de9-b1d2-ddf58cc09236)
-![εικόνα](https://github.com/user-attachments/assets/d3eb6eae-0fc6-4f3b-9745-42560d57ee09)
+ 
+1GHz:
+
+![εικόνα](https://github.com/user-attachments/assets/c6166b24-e89e-42c2-92dd-0e9433d1a350)
+![εικόνα](https://github.com/user-attachments/assets/728bf5e0-d98c-461f-a2f2-f83803d4df1e)
+
+
   
-TimingSimpleCPU:
+20GHz:
 
-![εικόνα](https://github.com/user-attachments/assets/6d0e24a6-58c5-4296-acce-ab999560229c)
-![εικόνα](https://github.com/user-attachments/assets/e711bfa7-a111-466e-8d80-1651b7c51616)
-  
+![εικόνα](https://github.com/user-attachments/assets/23c689a3-985a-4d17-a0e7-74462fc87de4)
+![εικόνα](https://github.com/user-attachments/assets/012a4f0d-7f72-459c-a97e-766454d504fe)
 
-2) Αλλαγή Τεχνολογίας Μνήμης
+
+
+2. Αλλαγή Τεχνολογίας Μνήμης
+
+
 DDR4_2400_8X8:
 
 ![εικόνα](https://github.com/user-attachments/assets/2b95bc52-1633-4196-8116-2cfea4586b10)
@@ -198,6 +205,8 @@ DDR4_2400_8X8:
 
 DDR3_1600_8x8:
    
+![εικόνα](https://github.com/user-attachments/assets/528b3f12-7c89-4b60-b18e-abd039408a2e)
+![εικόνα](https://github.com/user-attachments/assets/62e738b5-f6c6-4e34-b24d-ac7f5f24b501)
 
 
 
