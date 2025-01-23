@@ -978,4 +978,16 @@ o	Μια μικρή αύξηση της L1 μπορεί να μειώσει το
 Η επιλεγμένη αρχιτεκτονική είναι μια καλή ισορροπία μεταξύ κόστους και απόδοσης, με περιθώρια βελτίωσης στη μείωση του L2 μεγέθους ή του cache line size για περαιτέρω εξοικονόμηση κόστους.
 
 
+ΠΗΓΕΣ:
+
+[https://www.anandtech.com](https://www.anandtech.com/)
+
+https://en.wikipedia.org/wiki/CPU_cache
+
+https://www.intel.com/content/www/us/en/ark.html
+
+Hennessy, J. L., & Patterson, D. A. Computer Architecture: A Quantitative Approach.
+
+
+
 
